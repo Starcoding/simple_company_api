@@ -4,16 +4,17 @@
 
 - Скопировать код проекта
 - Переименовать `example.env` в `.env` и изменить параметры по усмотрению
-- Запустить проект в docker compose -> `docker compose up -d --build`
+- Запустить проект в docker compose -> `docker compose up -d --build`  
+  
   _Следующие команды нужно выполнять в терминале контейнера._
 - Создать миграции `python3 manage.py makemigrations company` и применить их `python3 manage.py migrate`
 - Создать админскую учетную запись `python3 manage.py createsuperuser`
 
-## Ссылки
+## Ссылки (для уже запущенного проекта)
 
-[Swagger][http://0.0.0.0:8000/swagger/]  
-[Api для департаментов][http://0.0.0.0:8000/api/departments/]  
-[Api для сотрудников][http://0.0.0.0:8000/api/employees/]
+[Swagger](http://0.0.0.0:8000/swagger/)  
+[Api для департаментов](http://0.0.0.0:8000/api/departments/)  
+[Api для сотрудников](http://0.0.0.0:8000/api/employees/)
 
 ## Использование в прод версии
 
@@ -21,3 +22,4 @@
 
 - Использование gunicorn
 - Использование nginx (как обратного прокси и для сервинга статики и медиа)
+- Использование Sentry или Rollbar логгирования для ошибок
