@@ -24,7 +24,7 @@ class Employee(models.Model):
     photo = models.ImageField(verbose_name="Фотография сотрудника", blank=True)
     job_title = models.CharField(verbose_name="Должность сотрудника", max_length=80)
     salary = models.DecimalField(
-        verbose_name="Зарплата сотрудника", decimal_places=2, max_digits=8
+        verbose_name="Зарплата сотрудника", decimal_places=2, max_digits=10
     )
     age = models.IntegerField(verbose_name="Возраст сотрудника")
     department = models.ForeignKey(
